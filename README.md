@@ -336,6 +336,4 @@ The project offers a practical approach to addressing the limitations of traditi
 
 
 
-Also, your report identifies the project as a **Supply Chain Management project**, not simply a cybersecurity intrusion detection project. Keep this exact title in your GitHub repository.
 
-**My recommendation:** Add 3–4 screenshots from your report's User Interface chapter (pages 19–22) to your repository. This will make your GitHub project look much more professional to placement recruiters.
