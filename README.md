@@ -40,7 +40,7 @@ The application provides a web-based interface developed using Flask to manage b
 - Checks user credentials.
 - Records successful and unsuccessful login attempts.
   ### Login Page
-![Login Page](login-page.png)
+![Login Page](login-page.png.png)
  ###  Main Dashboard
 ![Main Dashboard](main-dashboard.png)
 
