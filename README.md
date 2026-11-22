@@ -1,116 +1,187 @@
-# 🔐 Blockchain-Based Cybersecurity Intrusion Detection System
+# 🔗 Blockchain-Based Supply Chain Information Sharing Mechanism
+
+### Secure • Transparent • Traceable Supply Chain Management
 
 ## 📌 Project Overview
 
-The **Blockchain-Based Cybersecurity Intrusion Detection System** is a Python-based web application designed to identify suspicious login activities and detect potential cyber threats using blockchain technology and cybersecurity dataset analysis.
+The **Blockchain-Based Supply Chain Information Sharing Mechanism** is a Python-based web application designed to improve security, transparency, data integrity, and traceability in supply chain management using Blockchain technology.
 
-The system monitors user login activities, identifies suspicious behavior, detects repeated failed login attempts, and records security-related events.
+Traditional supply chain systems often face problems such as data manipulation, lack of transparency, inefficient product tracking, and cybersecurity threats.
 
-It integrates blockchain technology to maintain transaction records securely and uses an SQLite database to store user information, login attempts, transactions, blocks, and detected hackers.
+To overcome these challenges, this project integrates Blockchain technology with an SQLite database to securely record supply chain transactions and maintain reliable information sharing.
 
-The application provides a web-based interface developed using Flask to manage blockchain operations and monitor cybersecurity activities.
+The system is developed using Python and Flask. It allows users to register, log in, add supply chain transactions, mine blocks using the Proof of Work algorithm, validate the blockchain, and track products throughout the supply chain.
+
+Additionally, the system includes a cybersecurity module that monitors login activities, detects suspicious users, identifies potential hackers through dataset-based analysis, and displays security information through interactive charts.
 
 ## 🎯 Project Objectives
 
-- To detect suspicious login activities and potential cyberattacks.
-- To identify users with multiple failed login attempts.
-- To detect unusual login times and suspicious activities.
-- To implement blockchain technology for maintaining transaction records.
-- To analyze cybersecurity intrusion datasets.
-- To store and manage security information using SQLite.
-- To improve monitoring and tracking of cybersecurity threats.
+- To develop a secure supply chain information-sharing mechanism using Blockchain technology.
+- To maintain transaction integrity using cryptographic hashing.
+- To improve transparency among supply chain participants.
+- To provide product tracking throughout different supply chain stages.
+- To implement secure user registration and authentication.
+- To detect suspicious login activities and potential cyber threats.
+- To perform dataset-based hacker detection.
+- To store and retrieve information efficiently using SQLite.
+- To visualize transaction and cybersecurity information through charts.
+
+## 🚀 Key Features
+
+### 1. Blockchain Implementation
+- Creation and management of blocks.
+- SHA-256 cryptographic hashing.
+- Proof of Work (PoW) mining mechanism.
+- Linking blocks using previous block hashes.
+- Blockchain integrity validation.
+- Detection of blockchain tampering.
+
+### 2. Supply Chain Transaction Management
+- Add supply chain transactions.
+- Record sender, receiver, and product information.
+- Store transactions in the database.
+- Include pending transactions in newly mined blocks.
+- Maintain transaction history.
+
+### 3. Product Tracking
+- Search products by name.
+- Retrieve product transaction history.
+- Track product movement between supply chain participants.
+- View product information throughout different stages.
+
+### 4. User Authentication
+- User registration.
+- Secure login interface.
+- Credential verification.
+- Login attempt monitoring.
+- Session management.
+  ###  Login Page
+![Login Page](login-page.png.png)
+###  Main Dashboard
+![Main Dashboard](main-dashboard.png.png)
+
+### 5. Cybersecurity and Hacker Detection
+- Monitor unsuccessful login attempts.
+- Identify suspicious login activities.
+- Detect repeated failed login attempts.
+- Identify unusual login times.
+- Block suspicious users.
+- Maintain a list of detected hackers.
+  ###  Hacker Detection
+![Hacker Detection](hacker-detection.png.png)
+
+### 6. Dataset-Based Analysis
+- Import cybersecurity intrusion datasets.
+- Analyze login attempts and failed logins.
+- Identify unusual access patterns.
+- Detect potential malicious activities using predefined conditions.
+- Store detected hacker information in SQLite.
+  
+
+### 7. Data Visualization
+- Interactive charts using Chart.js.
+- Hacker detection statistics.
+- Product analytics.
+- Transaction flow visualization.
+- Dashboard-based monitoring.
+  ###  Blocked Users Dashboard
+![Blocked Users Dashboard](blocked-users.png.png)
+
+### 8. Database Management
+- SQLite database integration.
+- User information storage.
+- Transaction management.
+- Blockchain block storage.
+- Login attempt records.
+- Hacker information management.
+- Dataset storage.
+
+## 🏗️ System Architecture
+
+The system follows a client-server architecture consisting of four major layers.
+
+**1. Presentation Layer (Frontend)**
+- HTML
+- CSS
+- JavaScript
+- Chart.js
+
+Provides interfaces for registration, login, transactions, blockchain management, product tracking, and dashboards.
+
+**2. Application Layer (Backend)**
+- Python
+- Flask
+
+Handles application routing, user authentication, transaction processing, blockchain operations, and hacker detection.
+
+**3. Blockchain Layer**
+- Block creation
+- Proof of Work
+- SHA-256 hashing
+- Blockchain validation
+- Transaction management
+
+**4. Data Layer**
+- SQLite Database
+
+Stores users, transactions, blocks, login attempts, detected hackers, and dataset information.
+
+## 🔄 Working Process
+
+The application follows these major steps:
+
+1. **User Registration:** New users register by providing their credentials.
+2. **User Login:** Registered users log in to access the application.
+3. **Transaction Addition:** Users enter sender, receiver, and product details.
+4. **Transaction Storage:** Transaction information is stored in the blockchain module and SQLite database.
+5. **Block Mining:** Pending transactions are grouped into blocks using the Proof of Work algorithm.
+6. **Blockchain Validation:** The system verifies block hashes and previous hash connections.
+7. **Product Tracking:** Users search for products and retrieve their transaction history.
+8. **Hacker Detection:** Suspicious login activities are monitored and identified.
+9. **Dataset Analysis:** Cybersecurity data is analyzed to identify potential hackers.
+10. **Data Visualization:** Charts display transaction analytics and hacker statistics.
 
 ## 🛠️ Technologies Used
 
 | Technology | Purpose |
 |---|---|
 | Python | Backend programming |
-| Flask | Web application development |
-| Blockchain | Secure transaction recording |
+| Flask | Web application framework |
+| Blockchain | Secure transaction management |
 | SQLite | Database management |
-| Pandas | Dataset processing and analysis |
-| HTML, CSS, JavaScript | Web interface |
-| SHA-256 | Hash generation |
-| Proof of Work | Blockchain mining mechanism |
+| HTML | Web page structure |
+| CSS | User interface styling |
+| JavaScript | Frontend interaction |
+| Chart.js | Data visualization |
+| Pandas | Cybersecurity dataset analysis |
+| Hashlib | SHA-256 hash generation |
+| JSON | Structured data handling |
 
-## ✨ Key Features
+## 📂 Project Modules
 
-### 1. User Registration and Login
-- Allows users to register and log in.
-- Checks user credentials.
-- Records successful and unsuccessful login attempts.
-  ### Login Page
-![Login Page](login-page.png.png)
- ###  Main Dashboard
-![Main Dashboard](main-dashboard.png.png)
+The project consists of nine major modules:
 
-### 2. Hacker Detection
-- Detects repeated failed login attempts.
-- Identifies suspicious login activities.
-- Blocks users after three failed login attempts.
-- Identifies suspicious login activities during unusual hours.
- ###  Hacker Detection
-![Hacker Detection](main-dashboard.png.png)
+1. Blockchain Module
+2. Transaction Module
+3. Block Management Module
+4. Authentication Module
+5. Hacker Detection Module
+6. Dataset Analysis Module
+7. Database Module
+8. User Interface Module
+9. Product Tracking Module
 
-
-
-### 3. Blockchain Implementation
-- Creates blocks containing transaction information.
-- Generates SHA-256 hashes.
-- Implements Proof of Work mining.
-- Maintains connections between blocks using previous hashes.
-- Checks blockchain integrity.
-  ###  Blocked Users Dashboard
-![Blocked Users Dashboard](blocked-users.png.png)
-
-### 4. Cybersecurity Dataset Analysis
-- Loads cybersecurity intrusion data from a CSV file.
-- Analyzes login attempts and failed login records.
-- Identifies suspicious sessions.
-- Stores detected hacker information in the database.
-
-### 5. Database Management
-- Uses SQLite for storing application information.
-- Maintains user records.
-- Stores blockchain transactions and blocks.
-- Records login attempts and detected hackers.
-
-### 6. Blockchain Monitoring
-- Add transactions.
-- Mine new blocks.
-- View the blockchain.
-- Verify blockchain validity.
-- Track products or transactions.
-- Detect blockchain tampering.
-
-## 🏗️ Project Architecture
-
-The project consists of the following components:
-
-1. **Frontend:** Provides the user interface.
-2. **Flask Backend:** Handles application requests and operations.
-3. **Blockchain Module:** Creates blocks, generates hashes and performs mining.
-4. **Database Module:** Manages application data using SQLite.
-5. **Dataset Analysis Module:** Processes cybersecurity intrusion records.
-6. **Detection Module:** Identifies suspicious login activities and potential hackers.
-
-## 📂 Project Structure
+## 📁 Project Structure
 
 ```text
-Blockchain/
+Blockchain-Based-Supply-Chain/
 │
 ├── app.py
-│
 ├── blockchain.py
-│
 ├── database.py
-│
 ├── dataset_analysis.py
-│
 ├── insert_dataset.py
-│
 ├── cybersecurity_intrusion_data.csv
-│
 ├── blockchain.db
 │
 ├── routes/
@@ -125,10 +196,23 @@ Blockchain/
 │   ├── hackers.html
 │   └── blocked_dashboard.html
 │
-└── README.md
+├── static/
+│   ├── css/
+│   ├── js/
+│   └── images/
+│
+├── README.md
+└── requirements.txt
 ```
 
 ## ⚙️ Installation and Execution
+
+### Prerequisites
+
+- Python 3.x
+- VS Code or PyCharm
+- Web browser
+- Required Python libraries
 
 ### Step 1: Clone the Repository
 
@@ -136,13 +220,13 @@ Blockchain/
 git clone YOUR_GITHUB_REPOSITORY_URL
 ```
 
-### Step 2: Open the Project Folder
+### Step 2: Navigate to the Project Folder
 
 ```bash
-cd Blockchain
+cd Blockchain-Based-Supply-Chain
 ```
 
-### Step 3: Install Required Libraries
+### Step 3: Install Dependencies
 
 ```bash
 pip install flask pandas
@@ -154,87 +238,117 @@ pip install flask pandas
 python -c "from database import init_db; init_db()"
 ```
 
-### Step 5: Insert Dataset into Database
+### Step 5: Insert Cybersecurity Dataset
 
 ```bash
 python insert_dataset.py
 ```
 
-### Step 6: Perform Dataset Analysis
+### Step 6: Run Dataset Analysis
 
 ```bash
 python dataset_analysis.py
 ```
 
-### Step 7: Run the Application
+### Step 7: Start the Application
 
 ```bash
 python app.py
 ```
 
-### Step 8: Open the Application
-
-Open your browser and visit:
+### Step 8: Open in Browser
 
 ```text
 http://127.0.0.1:5000/
 ```
 
-## 📊 Dataset Information
+**Note:** The project must include its routes, templates, and static files. The commands above assume the database initialization function is available and the required project files are present.
 
-**Dataset Name:** Cybersecurity Intrusion Dataset
+## 💻 Hardware Requirements
 
-**File Name:** `cybersecurity_intrusion_data.csv`
+- Processor: Intel Core i3 or higher.
+- RAM: 4 GB (8 GB recommended).
+- Hard Disk: 500 GB or above.
+- System Type: 64-bit operating system.
 
-The dataset is used to identify suspicious login activities and potential security threats.
+## 📊 Results
 
-Important attributes used in the analysis include:
+The implemented system demonstrates the integration of Blockchain technology, database management, and cybersecurity mechanisms.
 
-- Session ID
-- Login Attempts
-- Failed Logins
-- Unusual Time
-- Attack Detected
-- Browser Type
+The project provides the following results:
 
-## 🔒 Blockchain Security
+- Successful recording of supply chain transactions.
+- Block creation using Proof of Work.
+- Blockchain integrity verification.
+- Product transaction history tracking.
+- User authentication and login monitoring.
+- Detection of suspicious login activities.
+- Dataset-based hacker identification.
+- Visualization of product analytics and hacker statistics.
 
-The project implements the following blockchain concepts:
+## 🔮 Future Enhancements
 
-- SHA-256 Hashing
-- Proof of Work
-- Block Creation
-- Previous Block Hash Verification
-- Blockchain Integrity Validation
-- Transaction Recording
+The project can be improved through the following enhancements:
 
-These mechanisms demonstrate how blockchain can be used to maintain the integrity of recorded security events.
+- Integration of Machine Learning algorithms for advanced hacker detection.
+- Implementation of a distributed blockchain network.
+- Password encryption using bcrypt.
+- Migration from SQLite to MySQL or MongoDB.
+- Development of a responsive frontend using React or Angular.
+- Real-time security notifications.
+- Mobile application integration.
+- IoT-based product tracking.
+- Cloud deployment for improved scalability.
 
-## 🚀 Future Enhancements
+## 🌍 Sustainable Development Goals (SDGs)
 
-- Implement machine learning-based intrusion detection.
-- Add real-time security monitoring.
-- Improve the web dashboard with interactive visualizations.
-- Implement stronger authentication and password encryption.
-- Add email notifications for suspicious activities.
-- Deploy the application to a cloud platform.
+This project contributes to the following United Nations Sustainable Development Goals:
 
-## 👨‍💻 Project Domain
+**SDG 9 – Industry, Innovation and Infrastructure**
 
-**Primary Domain:** Blockchain Technology
+Promotes technological innovation and strengthens digital infrastructure through secure and transparent supply chain information sharing.
 
-**Related Domain:** Cybersecurity and Intrusion Detection
+**SDG 16 – Peace, Justice and Strong Institutions**
 
-**Programming Language:** Python
+Promotes accountability, data integrity, secure information sharing, and protection against unauthorized access.
 
-**Framework:** Flask
+## 🎓 Academic Project Information
 
-**Database:** SQLite
+**Project Title:** Blockchain-Based Supply Chain Information Sharing Mechanism
+
+**Department:** Information Technology
+
+**Institution:** Kakatiya Institute of Technology & Science, Warangal
+
+**Academic Year:** 2025–2026
+
+**Project Supervisor:** Dr. G. Sathish Kumar
 
 ## 📝 Conclusion
 
-The Blockchain-Based Cybersecurity Intrusion Detection System demonstrates the integration of blockchain technology, Python programming, database management, and cybersecurity dataset analysis.
+The Blockchain-Based Supply Chain Information Sharing Mechanism demonstrates how blockchain technology can improve the security, transparency, and traceability of supply chain operations.
 
-The system identifies suspicious login behavior, detects potential hackers, and records security-related transactions using blockchain concepts.
+By integrating Blockchain, Flask, SQLite, and cybersecurity mechanisms, the system provides transaction management, product tracking, blockchain validation, user authentication, and hacker detection functionalities.
 
-This project provides practical experience in developing a cybersecurity monitoring application using blockchain and web technologies.
+The project offers a practical approach to addressing the limitations of traditional supply chain systems and provides a foundation for future improvements using distributed blockchain networks, machine learning, and cloud technologies.
+
+---
+
+**⭐ If you find this project useful, consider giving this repository a star!**
+```
+
+## Important: Before uploading to GitHub
+
+I noticed some differences between your report and the files visible in your earlier GitHub screenshot.
+
+Your report describes additional folders and components, including:
+
+- `routes/`
+- `templates/`
+- `static/`
+
+Make sure these are actually uploaded. Otherwise, the application may not run correctly.
+
+Also, your report identifies the project as a **Supply Chain Management project**, not simply a cybersecurity intrusion detection project. Keep this exact title in your GitHub repository.
+
+**My recommendation:** Add 3–4 screenshots from your report's User Interface chapter (pages 19–22) to your repository. This will make your GitHub project look much more professional to placement recruiters.
