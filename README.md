@@ -42,7 +42,7 @@ The application provides a web-based interface developed using Flask to manage b
   ### Login Page
 ![Login Page](login-page.png.png)
  ###  Main Dashboard
-![Main Dashboard](main-dashboard.png)
+![Main Dashboard](main-dashboard.png.png)
 
 ### 2. Hacker Detection
 - Detects repeated failed login attempts.
@@ -50,7 +50,7 @@ The application provides a web-based interface developed using Flask to manage b
 - Blocks users after three failed login attempts.
 - Identifies suspicious login activities during unusual hours.
  ###  Hacker Detection
-![Hacker Detection](hacker-detection.png)
+![Hacker Detection](main-dashboard.png.png)
 
 
 
@@ -61,7 +61,7 @@ The application provides a web-based interface developed using Flask to manage b
 - Maintains connections between blocks using previous hashes.
 - Checks blockchain integrity.
   ###  Blocked Users Dashboard
-![Blocked Users Dashboard](blocked-users.png)
+![Blocked Users Dashboard](blocked-users.png.png)
 
 ### 4. Cybersecurity Dataset Analysis
 - Loads cybersecurity intrusion data from a CSV file.
