@@ -334,20 +334,7 @@ The project offers a practical approach to addressing the limitations of traditi
 
 ---
 
-**⭐ If you find this project useful, consider giving this repository a star!**
-```
 
-## Important: Before uploading to GitHub
-
-I noticed some differences between your report and the files visible in your earlier GitHub screenshot.
-
-Your report describes additional folders and components, including:
-
-- `routes/`
-- `templates/`
-- `static/`
-
-Make sure these are actually uploaded. Otherwise, the application may not run correctly.
 
 Also, your report identifies the project as a **Supply Chain Management project**, not simply a cybersecurity intrusion detection project. Keep this exact title in your GitHub repository.
 
